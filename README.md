@@ -1,5 +1,9 @@
 # Telegram Job-Alert Bot
 
+<p align="center">
+  <img src="assets/screenshots/welcome.png" alt="Welcome screen — orange-hat pig greeting the user in Telegram" width="520">
+</p>
+
 A daily job-posting digest + interactive Telegram bot. Scrapes LinkedIn, Indeed,
 HackerNews "Who is Hiring", and remote-focused boards; filters by your criteria;
 sends each new posting as its own Telegram message with inline buttons; tracks
