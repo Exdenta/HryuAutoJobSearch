@@ -1,0 +1,4 @@
+interface:
+  display_name: "AcademicPositions Scraper"
+  short_description: "Run and integrate EU academic job scraping"
+  default_prompt: "Use $academicpositions-scraper to configure a capped AcademicPositions job scrape and explain the results."

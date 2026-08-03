@@ -1,0 +1,4 @@
+interface:
+  display_name: "InfoJobs Scraper"
+  short_description: "Scrape structured jobs from InfoJobs Spain"
+  default_prompt: "Use $infojobs-scraper to plan and run a capped InfoJobs Spain job search."

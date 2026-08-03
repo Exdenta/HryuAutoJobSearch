@@ -1,0 +1,4 @@
+interface:
+  display_name: "UK Case Law Scraper"
+  short_description: "Search official UK judgments and decisions"
+  default_prompt: "Use $uk-case-law-scraper to configure and run a capped UK case-law search."

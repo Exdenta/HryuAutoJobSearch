@@ -1,0 +1,4 @@
+interface:
+  display_name: "Welcome to the Jungle Scraper"
+  short_description: "Configure and integrate WTTJ job scraping"
+  default_prompt: "Use $wttj-scraper to configure a bounded Welcome to the Jungle job scrape and consume its results safely."

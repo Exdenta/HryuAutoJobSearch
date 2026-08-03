@@ -1,0 +1,4 @@
+interface:
+  display_name: "Remote Boards Scraper"
+  short_description: "Use and integrate four remote job boards"
+  default_prompt: "Use $remote-boards-scraper to evaluate, configure, and integrate the remote jobs Actor."

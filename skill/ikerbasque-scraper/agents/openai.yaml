@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ikerbasque Scraper"
+  short_description: "Run and integrate Ikerbasque research calls"
+  default_prompt: "Use $ikerbasque-scraper to configure a capped Ikerbasque research-call scrape and consume its dataset safely."

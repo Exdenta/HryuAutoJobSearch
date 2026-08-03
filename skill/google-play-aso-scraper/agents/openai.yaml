@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Play ASO Scraper"
+  short_description: "Run Google Play ASO and review research"
+  default_prompt: "Use $google-play-aso-scraper to plan and integrate a capped Google Play research run."

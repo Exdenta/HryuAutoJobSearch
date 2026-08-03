@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workable Jobs Scraper"
+  short_description: "Search and monitor Workable job postings"
+  default_prompt: "Use $workable-jobs-scraper to configure a capped Workable search or company-board scrape and consume its dataset safely."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "BuyRentKenya Scraper"
+  short_description: "Scrape Kenya real-estate listings safely"
+  default_prompt: "Use $buyrentkenya-scraper to configure and integrate a capped Kenya property-listing scrape."

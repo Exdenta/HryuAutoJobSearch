@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Job Search Agent"
+  short_description: "Run and integrate open-web AI job searches"
+  default_prompt: "Use $ai-job-search-agent to configure a capped job search and explain the results."

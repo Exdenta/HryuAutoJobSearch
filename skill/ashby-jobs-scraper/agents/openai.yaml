@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ashby Jobs Scraper"
+  short_description: "Configure and integrate Ashby job-board runs"
+  default_prompt: "Use $ashby-jobs-scraper to configure a capped Ashby jobs run and integrate its dataset safely."

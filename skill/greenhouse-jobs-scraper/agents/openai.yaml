@@ -1,0 +1,4 @@
+interface:
+  display_name: "Greenhouse Jobs Scraper"
+  short_description: "Scrape and monitor Greenhouse job boards"
+  default_prompt: "Use $greenhouse-jobs-scraper to configure a capped Greenhouse jobs scrape and integrate its output."

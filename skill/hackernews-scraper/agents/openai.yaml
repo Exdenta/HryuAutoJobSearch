@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hacker News Scraper"
+  short_description: "Run and integrate the Hacker News Actor"
+  default_prompt: "Use $hackernews-scraper to configure a capped Hacker News scrape and consume its dataset safely."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UN Careers Scraper"
+  short_description: "Run and integrate UN Careers job scraping"
+  default_prompt: "Use $un-careers-scraper to configure a cost-bounded UN Careers scrape and explain how to consume its results."

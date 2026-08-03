@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Search Scraper"
+  short_description: "Run BYOK AI searches for open-web jobs"
+  default_prompt: "Use $web-search-scraper to configure a capped open-web job search and explain the returned dataset."

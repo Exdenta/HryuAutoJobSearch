@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Careers Bundle"
+  short_description: "Run the six-ATS company jobs Actor"
+  default_prompt: "Use $company-careers-bundle to configure and integrate the company careers Actor safely."

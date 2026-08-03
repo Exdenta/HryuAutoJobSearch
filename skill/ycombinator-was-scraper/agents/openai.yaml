@@ -1,0 +1,4 @@
+interface:
+  display_name: "Y Combinator Jobs Scraper"
+  short_description: "Run and integrate YC startup job searches"
+  default_prompt: "Use $ycombinator-was-scraper to configure a capped YC startup jobs scrape and consume its dataset safely."

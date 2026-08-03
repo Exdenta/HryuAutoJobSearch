@@ -1,0 +1,4 @@
+interface:
+  display_name: "KU PhD Scraper"
+  short_description: "Run and integrate the KU PhD jobs Actor"
+  default_prompt: "Use $math-ku-phd-scraper to configure a capped KU PhD jobs run and consume its results safely."

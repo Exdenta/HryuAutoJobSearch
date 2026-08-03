@@ -1,0 +1,4 @@
+interface:
+  display_name: "EURES Scraper"
+  short_description: "Integrate official European job vacancy data"
+  default_prompt: "Use $eures-scraper to configure a capped EURES jobs run and integrate its dataset safely."

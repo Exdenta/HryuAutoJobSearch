@@ -1,0 +1,4 @@
+interface:
+  display_name: "UNJobs.org Scraper"
+  short_description: "Configure and integrate the UNJobs.org Actor"
+  default_prompt: "Use $unjobs-scraper to configure a capped UNJobs.org vacancy scrape and consume its results safely."

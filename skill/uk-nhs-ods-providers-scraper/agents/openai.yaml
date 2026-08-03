@@ -1,0 +1,4 @@
+interface:
+  display_name: "UK NHS ODS Providers Scraper"
+  short_description: "Search official UK NHS provider records"
+  default_prompt: "Use $uk-nhs-ods-providers-scraper to plan and integrate a capped NHS ODS provider-data run."

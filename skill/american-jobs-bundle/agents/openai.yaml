@@ -1,0 +1,4 @@
+interface:
+  display_name: "American Jobs Bundle"
+  short_description: "Run and integrate the six-source US jobs Actor"
+  default_prompt: "Use $american-jobs-bundle to configure a capped US jobs run and integrate its normalized output."

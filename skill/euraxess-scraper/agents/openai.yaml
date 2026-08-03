@@ -1,0 +1,4 @@
+interface:
+  display_name: "EURAXESS Scraper"
+  short_description: "Run and integrate EU research job searches"
+  default_prompt: "Use $euraxess-scraper to configure a capped EURAXESS research-jobs run and consume its dataset safely."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Built In Jobs Scraper"
+  short_description: "Configure and integrate Built In job runs"
+  default_prompt: "Use $builtin-scraper to plan a capped Built In jobs run and integrate its dataset safely."

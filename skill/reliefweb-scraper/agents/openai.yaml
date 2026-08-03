@@ -1,0 +1,4 @@
+interface:
+  display_name: "ReliefWeb Scraper"
+  short_description: "Run and integrate ReliefWeb humanitarian jobs"
+  default_prompt: "Use $reliefweb-scraper to configure a capped ReliefWeb jobs scrape and consume its dataset safely."

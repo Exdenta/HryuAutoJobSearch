@@ -1,0 +1,4 @@
+interface:
+  display_name: "Wellfound Jobs Scraper"
+  short_description: "Run filtered Wellfound startup job searches"
+  default_prompt: "Use $wellfound-scraper to configure and integrate a Wellfound startup jobs scrape."

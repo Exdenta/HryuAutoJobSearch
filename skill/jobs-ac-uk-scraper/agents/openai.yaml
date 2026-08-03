@@ -1,0 +1,4 @@
+interface:
+  display_name: "jobs.ac.uk Scraper"
+  short_description: "Run and integrate UK academic job scraping"
+  default_prompt: "Use $jobs-ac-uk-scraper to configure a capped jobs.ac.uk scrape and consume its dataset safely."

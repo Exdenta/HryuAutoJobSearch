@@ -1,0 +1,4 @@
+interface:
+  display_name: "Airbnb Scraper"
+  short_description: "Run capped Airbnb listing searches and details"
+  default_prompt: "Use $airbnb-scraper to configure a capped Airbnb scrape and interpret its dataset."

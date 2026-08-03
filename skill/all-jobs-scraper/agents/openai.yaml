@@ -1,0 +1,4 @@
+interface:
+  display_name: "All Jobs Scraper"
+  short_description: "Assess and integrate the 19-board job Actor"
+  default_prompt: "Use $all-jobs-scraper to assess this Actor for my job workflow and create a safe capped integration."

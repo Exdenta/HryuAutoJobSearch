@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Jobs Scraper"
+  short_description: "Run capped LinkedIn public job searches"
+  default_prompt: "Use $linkedin-scraper to configure and integrate a capped LinkedIn jobs search."

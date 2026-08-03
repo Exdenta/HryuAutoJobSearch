@@ -1,0 +1,4 @@
+interface:
+  display_name: "ML & AI Jobs Bundle"
+  short_description: "Run and integrate the eight-board AI/ML jobs Actor"
+  default_prompt: "Use $ml-ai-dev-bundle to configure a capped AI/ML jobs run and integrate its normalized dataset."

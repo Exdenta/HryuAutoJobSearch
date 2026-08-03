@@ -1,0 +1,4 @@
+interface:
+  display_name: "SPAC Redemptions Scraper"
+  short_description: "Track SEC SPAC lifecycle and redemptions"
+  default_prompt: "Use $spac-redemptions-scraper to configure a capped SEC SPAC lifecycle run and interpret its records."

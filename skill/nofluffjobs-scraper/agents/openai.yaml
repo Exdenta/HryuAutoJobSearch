@@ -1,0 +1,4 @@
+interface:
+  display_name: "NoFluffJobs Scraper"
+  short_description: "Run and integrate salary-transparent CEE jobs"
+  default_prompt: "Use $nofluffjobs-scraper to configure a capped NoFluffJobs scrape and integrate its results safely."

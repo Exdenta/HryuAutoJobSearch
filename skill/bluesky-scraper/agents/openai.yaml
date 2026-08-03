@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bluesky Scraper"
+  short_description: "Configure and integrate Bluesky data runs"
+  default_prompt: "Use $bluesky-scraper to plan a capped Bluesky extraction and show how to consume its dataset."

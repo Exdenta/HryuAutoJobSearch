@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tecnoempleo Scraper"
+  short_description: "Integrate Spanish tech job scraping"
+  default_prompt: "Use $tecnoempleo-scraper to configure a capped Tecnoempleo job scrape and consume its results safely."

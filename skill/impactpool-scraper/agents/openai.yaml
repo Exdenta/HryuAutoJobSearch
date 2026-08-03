@@ -1,0 +1,4 @@
+interface:
+  display_name: "Impactpool Scraper"
+  short_description: "Run and integrate the Impactpool jobs Actor"
+  default_prompt: "Use $impactpool-scraper to configure a capped Impactpool jobs scrape and explain how to consume its results."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SERP Multi-Engine Scraper"
+  short_description: "Scrape Bing, DuckDuckGo, Baidu, and Yahoo"
+  default_prompt: "Use $serp-multi-engine-scraper to configure a multi-engine SERP scrape and explain the returned dataset."

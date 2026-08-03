@@ -1,0 +1,4 @@
+interface:
+  display_name: "Devex Jobs Scraper"
+  short_description: "Find and integrate structured Devex job data"
+  default_prompt: "Use $devex-jobs-scraper to configure a capped Devex job search and integrate its dataset output."

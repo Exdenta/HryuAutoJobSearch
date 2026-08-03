@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lever Jobs Scraper"
+  short_description: "Run and integrate the Lever jobs Actor"
+  default_prompt: "Use $lever-jobs-scraper to configure a capped Lever jobs scrape and consume its dataset safely."

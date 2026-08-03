@@ -1,0 +1,4 @@
+interface:
+  display_name: "Europe Jobs Bundle"
+  short_description: "Configure and integrate Europe job scraping"
+  default_prompt: "Use $europe-jobs-bundle to assess fit and create a capped Apify integration for European job data."

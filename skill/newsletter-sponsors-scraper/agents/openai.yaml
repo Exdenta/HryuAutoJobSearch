@@ -1,0 +1,4 @@
+interface:
+  display_name: "Newsletter Sponsors Scraper"
+  short_description: "Find and integrate newsletter sponsor leads"
+  default_prompt: "Use $newsletter-sponsors-scraper to plan a capped newsletter sponsor search and integrate its results."

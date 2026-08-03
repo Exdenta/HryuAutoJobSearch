@@ -1,0 +1,4 @@
+interface:
+  display_name: "JustJoin.it Scraper"
+  short_description: "Run and integrate Polish tech job scraping"
+  default_prompt: "Use $justjoinit-scraper to configure a capped JustJoin.it job scrape and consume its results safely."

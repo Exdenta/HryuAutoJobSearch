@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Jobs.net Scraper"
+  short_description: "Configure and integrate aijobs.net job runs"
+  default_prompt: "Use $ai-jobs-net-scraper to configure a capped aijobs.net job scrape and explain the returned records."

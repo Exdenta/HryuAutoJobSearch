@@ -1,0 +1,4 @@
+interface:
+  display_name: "PTAB Trials Scraper"
+  short_description: "Track USPTO PTAB trials and decisions"
+  default_prompt: "Use $ptab-trials-scraper to plan and integrate a capped PTAB monitoring run."

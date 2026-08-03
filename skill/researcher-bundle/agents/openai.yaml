@@ -1,0 +1,4 @@
+interface:
+  display_name: "Researcher Jobs Bundle"
+  short_description: "Run and integrate the 12-source research jobs Actor"
+  default_prompt: "Use $researcher-bundle to configure a capped research-jobs run and integrate its normalized output."

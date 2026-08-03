@@ -1,0 +1,4 @@
+interface:
+  display_name: "UB Doctoral Scraper"
+  short_description: "Run and integrate the UB academic jobs Actor"
+  default_prompt: "Use $ub-doctoral-scraper to configure a capped Universitat de Barcelona vacancy run and consume its results safely."
