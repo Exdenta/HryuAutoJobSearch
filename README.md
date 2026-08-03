@@ -391,6 +391,7 @@ only for postings you haven't seen. No subscription — pay per result.
 | Actor | What it does |
 |-------|--------------|
 | [**linkedin-scraper**](https://apify.com/nomad-agent/linkedin-scraper) | LinkedIn Jobs without login — delta mode for scheduled alerts, $0.90/1k results |
+| [**web-dev-bundle**](https://apify.com/nomad-agent/web-dev-bundle) | 10 developer-job sources in one normalized, deduplicated dataset, with optional candidate matching |
 | [**all-jobs-scraper**](https://apify.com/nomad-agent/all-jobs-scraper) | 19 job boards behind one endpoint — the whole fleet in a single call, from $1.20/1k |
 | [**ai-job-search-agent**](https://apify.com/nomad-agent/ai-job-search-agent) | Full AI job search as an API — describe the candidate, get scored matches. AI cost included |
 | [**company-careers-bundle**](https://apify.com/nomad-agent/company-careers-bundle) | Turn a company list into live postings via Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Workday |
@@ -404,6 +405,11 @@ only for postings you haven't seen. No subscription — pay per result.
 | [**impactpool-scraper**](https://apify.com/nomad-agent/impactpool-scraper) | Impactpool.org — UN, NGO and international-development careers |
 | [**unjobs-scraper**](https://apify.com/nomad-agent/unjobs-scraper) | unjobs.org — UN and NGO vacancies across 143 agencies (UNICEF, WFP, UNDP, UNHCR…) |
 | [**ycombinator-was-scraper**](https://apify.com/nomad-agent/ycombinator-was-scraper) | Y Combinator's Work at a Startup board — 1,000+ jobs with parsed salary, equity, visa policy |
+
+Claude and Codex agents can use the repository's
+[**Web Dev Bundle skill**](skill/web-dev-bundle/) to assess whether the Actor
+fits a use case, generate integrations, choose cost caps, and interpret run
+results.
 
 For several of these sources (EURAXESS, EURES, Impactpool, unjobs.org,
 jobs.ac.uk, AcademicPositions) these are the **only maintained scrapers on

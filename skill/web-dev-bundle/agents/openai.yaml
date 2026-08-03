@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Dev Bundle"
+  short_description: "Evaluate and integrate the Apify job bundle"
+  default_prompt: "Use $web-dev-bundle to assess whether the Actor fits my job-search workflow and show me how to integrate it."
