@@ -388,32 +388,67 @@ every day, and they handle the hard stuff: residential proxies,
 DataDome/Cloudflare bypass, pagination, dedupe, and delta mode so you pay
 only for postings you haven't seen. No subscription — pay per result.
 
-| Actor | What it does |
-|-------|--------------|
-| [**linkedin-scraper**](https://apify.com/nomad-agent/linkedin-scraper) | LinkedIn Jobs without login — delta mode for scheduled alerts, $0.90/1k results |
-| [**web-dev-bundle**](https://apify.com/nomad-agent/web-dev-bundle) | 10 developer-job sources in one normalized, deduplicated dataset, with optional candidate matching |
-| [**all-jobs-scraper**](https://apify.com/nomad-agent/all-jobs-scraper) | 19 job boards behind one endpoint — the whole fleet in a single call, from $1.20/1k |
-| [**ai-job-search-agent**](https://apify.com/nomad-agent/ai-job-search-agent) | Full AI job search as an API — describe the candidate, get scored matches. AI cost included |
-| [**company-careers-bundle**](https://apify.com/nomad-agent/company-careers-bundle) | Turn a company list into live postings via Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Workday |
-| [**europe-jobs-bundle**](https://apify.com/nomad-agent/europe-jobs-bundle) | 14 Europe-focused sources (EURES, EURAXESS, WTTJ, JustJoin.it, NoFluffJobs, InfoJobs, Tecnoempleo, jobs.ac.uk…) |
-| [**researcher-bundle**](https://apify.com/nomad-agent/researcher-bundle) | 12-source academic/research aggregator (EURAXESS, jobs.ac.uk, EURES, AcademicPositions, ReliefWeb…) |
-| [**remote-boards-scraper**](https://apify.com/nomad-agent/remote-boards-scraper) | RemoteOK, Remotive, WeWorkRemotely, Himalayas in one run |
-| [**eures-scraper**](https://apify.com/nomad-agent/eures-scraper) | EURES — 2M+ live EU vacancies across 31 countries, official EU job-mobility portal |
-| [**euraxess-scraper**](https://apify.com/nomad-agent/euraxess-scraper) | EURAXESS — the EU's official researcher-mobility portal: PhD, postdoc, fellowship, faculty |
-| [**jobs-ac-uk-scraper**](https://apify.com/nomad-agent/jobs-ac-uk-scraper) | jobs.ac.uk — UK academic, postdoc and research jobs |
-| [**academicpositions-scraper**](https://apify.com/nomad-agent/academicpositions-scraper) | Postdoc, PhD and faculty jobs from academicpositions.com across EU, UK, Switzerland |
-| [**impactpool-scraper**](https://apify.com/nomad-agent/impactpool-scraper) | Impactpool.org — UN, NGO and international-development careers |
-| [**unjobs-scraper**](https://apify.com/nomad-agent/unjobs-scraper) | unjobs.org — UN and NGO vacancies across 143 agencies (UNICEF, WFP, UNDP, UNHCR…) |
-| [**ycombinator-was-scraper**](https://apify.com/nomad-agent/ycombinator-was-scraper) | Y Combinator's Work at a Startup board — 1,000+ jobs with parsed salary, equity, visa policy |
+Use a bundle when you want broad coverage, a source Actor when you know the
+board you need, or an AI discovery Actor when relevant postings may live
+anywhere on the open web. Every row links to a Claude/Codex skill that explains
+fit, inputs, cost caps, API integration, output fields, and failure modes.
 
-Claude and Codex agents can use the repository's
-[**Web Dev Bundle skill**](skill/web-dev-bundle/) to assess whether the Actor
-fits a use case, generate integrations, choose cost caps, and interpret run
-results.
+### Bundles and AI-assisted discovery
+
+| Actor | Agent skill | What it does |
+|-------|-------------|--------------|
+| [**ai-job-search-agent**](https://apify.com/nomad-agent/ai-job-search-agent) | [Claude / Codex](skill/ai-job-search-agent/SKILL.md) | Owner-funded AI discovery: describe a candidate and receive deduplicated, availability-checked, scored jobs from the open web. |
+| [**web-search-scraper**](https://apify.com/nomad-agent/web-search-scraper) | [Claude / Codex](skill/web-search-scraper/SKILL.md) | BYOK open-web job discovery using Anthropic, Mistral, or OpenAI, with ranked and availability-checked results. |
+| [**all-jobs-scraper**](https://apify.com/nomad-agent/all-jobs-scraper) | [Claude / Codex](skill/all-jobs-scraper/SKILL.md) | Merges and deduplicates normalized jobs from 19 public job boards behind one endpoint. |
+| [**web-dev-bundle**](https://apify.com/nomad-agent/web-dev-bundle) | [Claude / Codex](skill/web-dev-bundle/SKILL.md) | Aggregates 10 web-developer sources with normalized output and optional BYOK candidate matching. |
+| [**ml-ai-dev-bundle**](https://apify.com/nomad-agent/ml-ai-dev-bundle) | [Claude / Codex](skill/ml-ai-dev-bundle/SKILL.md) | Combines AI, machine-learning, MLOps, and data-science jobs from eight sources. |
+| [**american-jobs-bundle**](https://apify.com/nomad-agent/american-jobs-bundle) | [Claude / Codex](skill/american-jobs-bundle/SKILL.md) | Combines six US-focused job sources into one deduplicated dataset. |
+| [**europe-jobs-bundle**](https://apify.com/nomad-agent/europe-jobs-bundle) | [Claude / Codex](skill/europe-jobs-bundle/SKILL.md) | Aggregates 14 European sources spanning general, technical, and academic vacancies. |
+| [**researcher-bundle**](https://apify.com/nomad-agent/researcher-bundle) | [Claude / Codex](skill/researcher-bundle/SKILL.md) | Merges 12 sources for PhD, postdoc, faculty, research, policy, UN, and NGO roles. |
+| [**company-careers-bundle**](https://apify.com/nomad-agent/company-careers-bundle) | [Claude / Codex](skill/company-careers-bundle/SKILL.md) | Turns company names into live jobs by discovering Greenhouse, Lever, Ashby, Workable, SmartRecruiters, and Workday boards. |
+| [**remote-boards-scraper**](https://apify.com/nomad-agent/remote-boards-scraper) | [Claude / Codex](skill/remote-boards-scraper/SKILL.md) | Combines RemoteOK, Remotive, WeWorkRemotely, and Himalayas for remote-job feeds and alerts. |
+
+### General, technology, startup, and ATS sources
+
+| Actor | Agent skill | What it does |
+|-------|-------------|--------------|
+| [**linkedin-scraper**](https://apify.com/nomad-agent/linkedin-scraper) | [Claude / Codex](skill/linkedin-scraper/SKILL.md) | Searches public LinkedIn Jobs without login or cookies, with detail enrichment and scheduled delta mode. |
+| [**hackernews-scraper**](https://apify.com/nomad-agent/hackernews-scraper) | [Claude / Codex](skill/hackernews-scraper/SKILL.md) | Extracts Hacker News Who is hiring, Who wants to be hired, and Freelancer threads, or performs site-wide HN search. |
+| [**builtin-scraper**](https://apify.com/nomad-agent/builtin-scraper) | [Claude / Codex](skill/builtin-scraper/SKILL.md) | Collects US technology jobs from Built In, including salary, skills, detail enrichment, and delta state. |
+| [**ai-jobs-net-scraper**](https://apify.com/nomad-agent/ai-jobs-net-scraper) | [Claude / Codex](skill/ai-jobs-net-scraper/SKILL.md) | Retrieves curated AI, ML, MLOps, and data-science vacancies from aijobs.net. |
+| [**wellfound-scraper**](https://apify.com/nomad-agent/wellfound-scraper) | [Claude / Codex](skill/wellfound-scraper/SKILL.md) | Searches Wellfound startup jobs with remote, role, salary, freshness, and new-job filters. |
+| [**ycombinator-was-scraper**](https://apify.com/nomad-agent/ycombinator-was-scraper) | [Claude / Codex](skill/ycombinator-was-scraper/SKILL.md) | Retrieves Y Combinator Work at a Startup jobs with salary, equity, visa, role, batch, and remote fields. |
+| [**greenhouse-jobs-scraper**](https://apify.com/nomad-agent/greenhouse-jobs-scraper) | [Claude / Codex](skill/greenhouse-jobs-scraper/SKILL.md) | Discovers or monitors company Greenhouse boards, with salary and application-question extraction. |
+| [**lever-jobs-scraper**](https://apify.com/nomad-agent/lever-jobs-scraper) | [Claude / Codex](skill/lever-jobs-scraper/SKILL.md) | Retrieves live postings from company Lever boards with filters, delta monitoring, and optional BYOK enrichment. |
+| [**ashby-jobs-scraper**](https://apify.com/nomad-agent/ashby-jobs-scraper) | [Claude / Codex](skill/ashby-jobs-scraper/SKILL.md) | Discovers or directly queries public Ashby boards and returns normalized postings. |
+| [**workable-jobs-scraper**](https://apify.com/nomad-agent/workable-jobs-scraper) | [Claude / Codex](skill/workable-jobs-scraper/SKILL.md) | Searches Workable's public index or specific company boards, with delta mode and optional BYOK enrichment. |
+| [**wttj-scraper**](https://apify.com/nomad-agent/wttj-scraper) | [Claude / Codex](skill/wttj-scraper/SKILL.md) | Searches Welcome to the Jungle for French and European vacancies, salary data, and recurring alerts. |
+| [**justjoinit-scraper**](https://apify.com/nomad-agent/justjoinit-scraper) | [Claude / Codex](skill/justjoinit-scraper/SKILL.md) | Retrieves Polish and Central/Eastern European technology jobs with salary and detail data. |
+| [**nofluffjobs-scraper**](https://apify.com/nomad-agent/nofluffjobs-scraper) | [Claude / Codex](skill/nofluffjobs-scraper/SKILL.md) | Retrieves NoFluffJobs technology and business roles across Poland and Central/Eastern Europe. |
+| [**infojobs-scraper**](https://apify.com/nomad-agent/infojobs-scraper) | [Claude / Codex](skill/infojobs-scraper/SKILL.md) | Searches InfoJobs Spain with province, remote-work, contract, schedule, salary, and alert filters. |
+| [**tecnoempleo-scraper**](https://apify.com/nomad-agent/tecnoempleo-scraper) | [Claude / Codex](skill/tecnoempleo-scraper/SKILL.md) | Retrieves Spanish IT and technology vacancies with salary, location, detail, and delta fields. |
+
+### Academic, European, humanitarian, and UN sources
+
+| Actor | Agent skill | What it does |
+|-------|-------------|--------------|
+| [**eures-scraper**](https://apify.com/nomad-agent/eures-scraper) | [Claude / Codex](skill/eures-scraper/SKILL.md) | Searches the official EURES API for vacancies across Europe, including country and freshness filters. |
+| [**euraxess-scraper**](https://apify.com/nomad-agent/euraxess-scraper) | [Claude / Codex](skill/euraxess-scraper/SKILL.md) | Retrieves EURAXESS PhD, postdoc, fellowship, faculty, and researcher-mobility vacancies. |
+| [**academicpositions-scraper**](https://apify.com/nomad-agent/academicpositions-scraper) | [Claude / Codex](skill/academicpositions-scraper/SKILL.md) | Finds postdoc, PhD, faculty, and research jobs from AcademicPositions. |
+| [**jobs-ac-uk-scraper**](https://apify.com/nomad-agent/jobs-ac-uk-scraper) | [Claude / Codex](skill/jobs-ac-uk-scraper/SKILL.md) | Retrieves UK academic, postdoc, research, PhD, and university professional-services vacancies. |
+| [**ikerbasque-scraper**](https://apify.com/nomad-agent/ikerbasque-scraper) | [Claude / Codex](skill/ikerbasque-scraper/SKILL.md) | Monitors Ikerbasque research calls in Spain's Basque Country, with optional deadline extraction. |
+| [**math-ku-phd-scraper**](https://apify.com/nomad-agent/math-ku-phd-scraper) | [Claude / Codex](skill/math-ku-phd-scraper/SKILL.md) | Retrieves University of Copenhagen PhD and research-fellowship openings. |
+| [**ub-doctoral-scraper**](https://apify.com/nomad-agent/ub-doctoral-scraper) | [Claude / Codex](skill/ub-doctoral-scraper/SKILL.md) | Retrieves currently open Universitat de Barcelona academic vacancies. |
+| [**reliefweb-scraper**](https://apify.com/nomad-agent/reliefweb-scraper) | [Claude / Codex](skill/reliefweb-scraper/SKILL.md) | Searches current ReliefWeb humanitarian, NGO, aid-worker, and UN-sector vacancies. |
+| [**impactpool-scraper**](https://apify.com/nomad-agent/impactpool-scraper) | [Claude / Codex](skill/impactpool-scraper/SKILL.md) | Retrieves UN, NGO, development-bank, EU-institution, and international-development vacancies from Impactpool. |
+| [**devex-jobs-scraper**](https://apify.com/nomad-agent/devex-jobs-scraper) | [Claude / Codex](skill/devex-jobs-scraper/SKILL.md) | Discovers international-development, NGO, humanitarian, donor, and UN jobs or checks whether known Devex URLs remain live. |
+| [**devex-scraper**](https://apify.com/nomad-agent/devex-scraper) | [Claude / Codex](skill/devex-scraper/SKILL.md) | Searches indexed Devex development, NGO, humanitarian, consultancy, donor, and UN roles, with optional BYOK processing. |
+| [**un-careers-scraper**](https://apify.com/nomad-agent/un-careers-scraper) | [Claude / Codex](skill/un-careers-scraper/SKILL.md) | Retrieves current United Nations Secretariat vacancies from careers.un.org. |
+| [**unjobs-scraper**](https://apify.com/nomad-agent/unjobs-scraper) | [Claude / Codex](skill/unjobs-scraper/SKILL.md) | Retrieves UN, NGO, and international-organisation vacancies from unjobs.org by feed, organisation, or duty station. |
 
 For several of these sources (EURAXESS, EURES, Impactpool, unjobs.org,
 jobs.ac.uk, AcademicPositions) these are the **only maintained scrapers on
-Apify**. Full catalog — 50+ actors covering jobs, search, app intelligence
+Apify**. Full catalog — 48 actors covering jobs, search, app intelligence
 and open data: [apify.com/nomad-agent](https://apify.com/nomad-agent).
 
 <!-- TODO: append Apify fair-share affiliate parameter (e.g. ?fpr=<code>) to the links above once assigned -->
