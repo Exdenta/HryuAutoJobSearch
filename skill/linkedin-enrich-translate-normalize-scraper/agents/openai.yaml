@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Normalized Scraper"
+  short_description: "Set up and parse normalized LinkedIn jobs"
+  default_prompt: "Use $linkedin-enrich-translate-normalize-scraper to configure this Actor and parse its normalized output."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "EURAXESS Normalized Scraper"
+  short_description: "Set up and parse normalized EURAXESS jobs"
+  default_prompt: "Use $euraxess-enrich-translate-normalize-scraper to configure this Actor and parse its normalized output."

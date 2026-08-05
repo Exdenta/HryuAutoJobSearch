@@ -413,6 +413,7 @@ fit, inputs, cost caps, API integration, output fields, and failure modes.
 | Actor | Agent skill | What it does |
 |-------|-------------|--------------|
 | [**linkedin-scraper**](https://apify.com/nomad-agent/linkedin-scraper) | [Claude / Codex](skill/linkedin-scraper/SKILL.md) | Searches public LinkedIn Jobs without login or cookies, with detail enrichment and scheduled delta mode. |
+| [**linkedin-enrich-translate-normalize-scraper**](https://apify.com/nomad-agent/linkedin-enrich-translate-normalize-scraper) | [Claude / Codex](skill/linkedin-enrich-translate-normalize-scraper/SKILL.md) | Maps public LinkedIn cards, detail pages, and JobPosting JSON-LD into strict `nomad-agent-job-v1`, with optional English display-field translation and null-only BYOK enrichment. |
 | [**hackernews-scraper**](https://apify.com/nomad-agent/hackernews-scraper) | [Claude / Codex](skill/hackernews-scraper/SKILL.md) | Extracts Hacker News Who is hiring, Who wants to be hired, and Freelancer threads, or performs site-wide HN search. |
 | [**builtin-scraper**](https://apify.com/nomad-agent/builtin-scraper) | [Claude / Codex](skill/builtin-scraper/SKILL.md) | Collects US technology jobs from Built In, including salary, skills, detail enrichment, and delta state. |
 | [**ai-jobs-net-scraper**](https://apify.com/nomad-agent/ai-jobs-net-scraper) | [Claude / Codex](skill/ai-jobs-net-scraper/SKILL.md) | Retrieves curated AI, ML, MLOps, and data-science vacancies from aijobs.net. |
@@ -434,6 +435,7 @@ fit, inputs, cost caps, API integration, output fields, and failure modes.
 |-------|-------------|--------------|
 | [**eures-scraper**](https://apify.com/nomad-agent/eures-scraper) | [Claude / Codex](skill/eures-scraper/SKILL.md) | Searches the official EURES API for vacancies across Europe, including country and freshness filters. |
 | [**euraxess-scraper**](https://apify.com/nomad-agent/euraxess-scraper) | [Claude / Codex](skill/euraxess-scraper/SKILL.md) | Retrieves EURAXESS PhD, postdoc, fellowship, faculty, and researcher-mobility vacancies. |
+| [**euraxess-enrich-translate-normalize-scraper**](https://apify.com/nomad-agent/euraxess-enrich-translate-normalize-scraper) | [Claude / Codex](skill/euraxess-enrich-translate-normalize-scraper/SKILL.md) | Normalizes EURAXESS research vacancies into `nomad-agent-job-v1`, including deterministic requirements, locations, funding, and a versioned source extension, with optional translation and enrichment. |
 | [**academicpositions-scraper**](https://apify.com/nomad-agent/academicpositions-scraper) | [Claude / Codex](skill/academicpositions-scraper/SKILL.md) | Finds postdoc, PhD, faculty, and research jobs from AcademicPositions. |
 | [**jobs-ac-uk-scraper**](https://apify.com/nomad-agent/jobs-ac-uk-scraper) | [Claude / Codex](skill/jobs-ac-uk-scraper/SKILL.md) | Retrieves UK academic, postdoc, research, PhD, and university professional-services vacancies. |
 | [**ikerbasque-scraper**](https://apify.com/nomad-agent/ikerbasque-scraper) | [Claude / Codex](skill/ikerbasque-scraper/SKILL.md) | Monitors Ikerbasque research calls in Spain's Basque Country, with optional deadline extraction. |
@@ -448,7 +450,7 @@ fit, inputs, cost caps, API integration, output fields, and failure modes.
 
 For several of these sources (EURAXESS, EURES, Impactpool, unjobs.org,
 jobs.ac.uk, AcademicPositions) these are the **only maintained scrapers on
-Apify**. Full catalog — 48 actors covering jobs, search, app intelligence
+Apify**. Full catalog — 50+ actors covering jobs, search, app intelligence
 and open data: [apify.com/nomad-agent](https://apify.com/nomad-agent).
 
 <!-- TODO: append Apify fair-share affiliate parameter (e.g. ?fpr=<code>) to the links above once assigned -->
